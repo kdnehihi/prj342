@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntroController">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <Label text="3 Card Poker Server" styleClass="title-label" />
+      <HBox alignment="CENTER" spacing="10">
+         <children>
+            <Label text="Port:" />
+            <TextField fx:id="portField" prefWidth="150.0" promptText="Enter port number" />
+         </children>
+      </HBox>
+      <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStartServer" text="Start Server" styleClass="primary-button" />
+   </children>
+</VBox>
+
